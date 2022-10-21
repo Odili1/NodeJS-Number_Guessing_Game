@@ -1,10 +1,9 @@
 /*
       Number Guessing Game
-1. There are 10 stages
-2. Guess the number to enter the next stage
-3. You have three trials in each stage
-4. For each right guess, 3 points will be acquired
-5. For each wrong guess, 1 point will be lost
+1. There are 10 stages.
+2. Guess the number to enter the next stage.
+3. You have three trials in each stage.
+4. For each right guess, 1 points will be award.
 */
 
 let userName = prompt('Input your Username:');
@@ -25,7 +24,7 @@ function startGame(stage, score, range){
   let userNumber;
   while (userNumber != compNumber && trials < 3){
     
-    userNumber = prompt(`Guess the number between 1 - ${range}:`);
+    userNumber = prompt(`Guess a number between 1 - ${range}:`);
   
     if (userNumber == compNumber){
       console.clear()
